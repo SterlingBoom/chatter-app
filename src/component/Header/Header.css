@@ -1,0 +1,127 @@
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 8px;
+
+
+  
+ 
+
+
+  /* 0.5rem */
+}
+.header-logo img {
+  width: 4rem;
+  height: 4rem;
+  rotate: 12deg;
+}
+
+.header h1{
+ color: var(--textClr);
+ font-size: 2rem;
+}
+/* .header h1{
+ position: relative;
+  top: 18px;
+  left: 10px;
+}  */
+
+.nav-menu-ul {
+  background-color: var(--accentClr);
+  display: flex;
+  row-gap: 48px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  height: 100dvh;
+  padding-block: 48px;
+  width: min(90%, 440px);
+  transform: translateX(200%);
+  transition: transform 400ms ease-in;
+  z-index: 5;
+}
+.nav-menu-ul.open {
+  transform: translateX(0%);
+}
+.nav-menu-ul a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--white);
+}
+.nav-menu-ul a:hover {
+  color: var(--textClr);
+}
+/* button {
+  padding: 4px 29px;
+  background: none;
+  color: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+} */
+
+.nav-ul {
+  display: none;
+}
+.menu-btn {
+  position: relative;
+  z-index: 9;
+}
+.menu-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-btn > span {
+  display: block;
+  height: 2px;
+  width: 28px;
+  background-color: var(--accentClr);
+  margin-bottom: 4px;
+  transition: transform 400ms ease, opacity 300ms ease-in;
+}
+span:first-child {
+  margin-top: 4px;
+  width: 24px;
+}
+span:last-child {
+  width: 20px;
+}
+.menu-btn.open span {
+  background-color: #fff;
+}
+.menu-btn.open span:nth-child(2) {
+  opacity: 0;
+}
+.menu-btn.open span:first-child {
+  rotate: -45deg;
+  transform: translateY(9px);
+}
+.menu-btn.open span:last-child {
+  rotate: 45deg;
+  transform: translateY(-10px);
+}
+@media (min-width: 48rem) {
+  .nav-ul {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+  .avatar > p {
+    text-transform: capitalize;
+  }
+  .menu-btn {
+    display: none;
+  }
+  .avatar-mobile {
+    display: none;
+  }
+  .nav-menu-ul {
+    display: none;
+  }
+}
