@@ -3,24 +3,32 @@
   justify-content: space-between;
   align-items: center;
   padding-block: 8px;
-
-
   
- 
-
-
-  /* 0.5rem */
+}
+.header{
+  background-color: var(--white);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
 }
 .header-logo img {
   width: 4rem;
   height: 4rem;
   rotate: 12deg;
 }
-
-.header h1{
- color: var(--textClr);
- font-size: 2rem;
+ .header h1 {
+  color: var(--textClr);
+  font-size: 2rem;
+  
 }
+.header h1:hover  {
+  /* color: var(--accentClr); */
+  outline: none;
+  /* background: none; */
+}
+
 /* .header h1{
  position: relative;
   top: 18px;

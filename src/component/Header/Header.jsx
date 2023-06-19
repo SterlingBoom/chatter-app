@@ -13,7 +13,8 @@ const Header = () => {
    //eslint-disable-next-line react/jsx-no-comment-textnodes
     <header className='header'>
       <nav className='container header-nav'>
-        <Link to='/' className='header-logo'>
+        <Link to='/' className='header-logo'
+        style={{background:'none'}}>
           {/* <img src={loveHeart} alt='love-heart' /> */}
           <h1  className=''>LoveDesk</h1>
         </Link>
@@ -27,13 +28,13 @@ const Header = () => {
             <Link to='/about'> About </Link>
           </li>
           <li>
-            <Link to='/blog'> Blog </Link>
+            <Link to='/create'> Create</Link>
           </li>
           <li>
             <button className='btn'> Logout </button>
           </li>
           <li>
-            <Link to='/sign-up '> Sign Up </Link>
+            <Link to='/Auth '> Login </Link>
           </li>
         </ul>
         <button
