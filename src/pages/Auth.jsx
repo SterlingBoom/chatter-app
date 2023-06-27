@@ -1,9 +1,12 @@
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from 'firebase/auth'
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  updateProfile,
+} from 'firebase/auth'
 import { useState } from 'react'
 import { toast } from 'react-toastify'
 import { auth } from '../firebase'
 import { useNavigate } from 'react-router-dom'
-
 
 const initialState = {
   firstName: '',
@@ -11,40 +14,34 @@ const initialState = {
   email: '',
   password: '',
   confirmPassword: '',
-}
 
-// eslint-disable-next-line react/prop-types
-const Auth = () => {
-  
+}
+//eslint-disable-next-line react/prop-types
+const Auth = ({ setActive, setUser }) => {
   const [state, setState] = useState(initialState)
   const [signUp, setSignUp] = useState(false)
-  
-  
+
   const { email, password, firstName, lastName, confirmPassword } = state
+
   const navigate = useNavigate()
 
   const handleChange = (e) => {
-    e.preventDefault()
     setState({ ...state, [e.target.name]: e.target.value })
   }
 
   const handleAuth = async (e) => {
     e.preventDefault()
     if (!signUp) {
-      if(email && password){
+      if (email && password) {
         const { user } = await signInWithEmailAndPassword(auth, email, password)
-      // toast.success('User logged in successfully')
-        navigate('/')
-
-        // eslint-disable-next-line react/prop-types
-        // setActive('home')
-      }else{
-        toast.error('Please fill all the fields')
+        setUser(user)
+        setActive('home')
+      } else {
+        return toast.error('All fields are mandatory to fill')
       }
-      //eslint-disable-next-line no-unused-vars
     } else {
       if (password !== confirmPassword) {
-        toast.error('Password does not match')
+        return toast.error("Password don't match")
       }
       if (firstName && lastName && email && password) {
         const { user } = await createUserWithEmailAndPassword(
@@ -52,17 +49,12 @@ const Auth = () => {
           email,
           password
         )
-
         await updateProfile(user, { displayName: `${firstName} ${lastName}` })
-    
-
-        // eslint-disable-next-line react/prop-types
-        // setActive('home')
+        setActive('home')
       } else {
-        return toast.error('Please fill all the fields')
+        return toast.error('All fields are mandatory to fill')
       }
     }
-toast.success('User created successfully')
     navigate('/')
   }
 
@@ -123,7 +115,7 @@ toast.success('User created successfully')
           <label htmlFor='password'>Password</label>
           <input
             type='password'
-            placeholder='Enter your password'
+            placeholder='Adalab123'
             id='password'
             name='password'
             value={password}
@@ -149,6 +141,7 @@ toast.success('User created successfully')
         )}
         <div className='form-group'>
           <button
+            // className='btnn'
             className={'btnn ${!signUp ? "btn-sign-in" : "btn-sign-up"}'}
             type='submit'
           >

@@ -1,1 +1,33 @@
-
+/* ABOUT SECTION */
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: transparent;
+  justify-content: space-between;
+  /* margin-top: 50px; */
+}
+.about-top {
+  margin-top: 70px;
+}
+.about-img {
+  width: 400px;
+  height: 500px;
+  /* text-align: center; */
+  margin: 0 50px;
+}
+.about-text {
+  color: var(--greyGold);
+  /* color: rgb(0, 0, 0); */
+}
+.about-text h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--accentClr);
+}
+.about-text h3 {
+  /* color: var(--grey); */
+   color: rgb(101, 46, 46);
+   line-height: 25px;
+   font-size: medium;
+  height: 50px;
+}

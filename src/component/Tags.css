@@ -1,0 +1,67 @@
+.tags > a {
+  text-decoration: none;
+}
+
+.tag:hover {
+  background: var(--accentClr);
+  color: #fff;
+  text-decoration: none;
+}
+.tag:active {
+  background: var(--accentClr);
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.tag:focus {
+  background: var(--accentClr);
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.blog-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  /* margin-bottom: 1rem; */
+  color: var(--textClr);
+  text-align: center;
+  margin-top: 1rem;
+}
+.text-start {
+  text-align: start;
+}
+
+ .py-2 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+} 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+.tag {
+  background: #f1f1f1;
+  padding: 10px 15px;
+  color: #222;
+  transition: 0.5s;
+  margin-right: 8px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+.tags {
+  display: flex;
+  /* justify-content: space-evenly; */
+  flex-wrap: wrap;
+}
+
+@media (max-width: 49.9375rem) {
+  .tags {
+    justify-content: center;
+  }
+
+  .tag {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}

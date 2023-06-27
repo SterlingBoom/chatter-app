@@ -5,6 +5,9 @@
   padding-block: 8px;
   
 }
+.btn{
+  cursor: pointer;
+}
 .header{
   background-color: var(--white);
   position: fixed;
@@ -132,4 +135,11 @@ span:last-child {
   .nav-menu-ul {
     display: none;
   }
+}
+.welcome{
+  color: var(--accentClr);
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  font-weight: 600;
+
 }
