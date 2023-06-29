@@ -412,12 +412,6 @@ blog-section {
 .text-start {
   text-align: left;
 }
-
-/* .category {
-  font-size: 14px;
-  color: #888;
-  margin-bottom: 5px;
-} */
 .category {
   display: inline-block;
   position: relative;
@@ -451,11 +445,6 @@ blog-section {
   font-size: 12px;
   color: #222;
 }
-
-/* .author {
-  display: inline;
-  margin-right: 5px;
-} */
 .author {
   display: inline-block;
   font-weight: 600;
@@ -486,19 +475,6 @@ blog-section {
   background: #bb0d0d;
 }
 
-/* 
-.edit-icons {
-  float: right;
-  margin-top: 15px;
-}
-
-.icon-trash,
-.icon-edit {
-  margin-right: 2px;
-  cursor: pointer;
-  font-size: 20px;
-  color: #888;
-} */
 
 .edit-icons {
   display: inline-flex;
