@@ -11,6 +11,11 @@ export default defineConfig({
       plugins: [autoprefixer],
     },
   },
-  build: { chunkSizeWarningLimit: 1600 },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
+  },
 })
-
