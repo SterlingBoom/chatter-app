@@ -214,8 +214,8 @@ a:focus {
 }
 
 .btn:disabled:active {
-background: var(--grey);
-color: var(--white);
+  background: var(--grey);
+  color: var(--white);
 }
 
 .btnn:disabled:focus {
