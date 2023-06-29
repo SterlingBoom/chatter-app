@@ -201,7 +201,7 @@ a:focus {
 .btn-sign-in {
   margin-top: 20px;
   padding: 5px 15px;
-  background: #6e03b5cf;
+  background: rgba(110, 3, 181, 0.8);
   border: none;
   color: var(--white);
   border-radius: 5px;
