@@ -16,7 +16,7 @@
 }
 
 .spiner::before {
-  content: " ";
+  content: ' ';
   box-sizing: border-box;
   position: absolute;
   top: 0;
@@ -30,20 +30,12 @@
 }
 .spiner-border {
   color: #c43421;
-  /* background-color: #c43421; */
 }
 
 @keyframes spin {
   0% {
     transform: rotate(0);
   }
-/* 
-  50% {
-    transform: rotate(180deg);
-  }
-  75% {
-    transform: rotate(270deg);
-  } */
   100% {
     transform: rotate(360deg);
   }
