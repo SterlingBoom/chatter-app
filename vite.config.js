@@ -12,7 +12,7 @@ export default defineConfig({
     },
   },
   build: {
-    target: 'modules',
+    target: 'es2021',
     rollupOptions: {
       output: {
         manualChunks(id) {
