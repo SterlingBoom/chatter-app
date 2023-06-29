@@ -101,7 +101,7 @@ a:focus {
 /* AUTH */
 
 .sign-in {
-  height: 80vdh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

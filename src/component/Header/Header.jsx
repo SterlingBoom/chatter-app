@@ -21,7 +21,6 @@ const Header = ({ user, handleLogOut}) => {
     <header className='header'>
       <nav className='container header-nav'>
         <Link to='/' className='header-logo' style={{ background: 'none' }}>
-          {/* <img src={loveHeart} alt='love-heart' /> */}
           <h1 className=''>LoveDesk</h1>
         </Link>
 
@@ -35,13 +34,6 @@ const Header = ({ user, handleLogOut}) => {
           <li>
             <Link to='/create'> Create</Link>
           </li>
-          {/* <li>
-            <button onClick={handleLogOut} className='btn'> Logout </button>
-          </li>
-          
-          <li>
-            <Link to='/Auth '> Login </Link>
-          </li> */}
           {userId ? (
             <>
               <li>

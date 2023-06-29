@@ -16,7 +16,7 @@ import { ErrorBoundary } from 'react-error-boundary'
 import ErrorFallback from './ErrorFallBack'
 import { useNavigate } from 'react-router-dom'
 import NotFound from './component/NotFound'
-// import Footer from './component/Footer.jsx'
+
 
 const App = () => {
   const [active, setActive] = useState('home')

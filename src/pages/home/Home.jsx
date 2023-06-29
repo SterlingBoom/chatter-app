@@ -72,6 +72,9 @@ const Home = ({ setActive, user }) => {
 
         toast.success('Blog deleted successfully')
         setLoading(false)
+
+
+        
       } catch (err) {
         console.log(err)
       }

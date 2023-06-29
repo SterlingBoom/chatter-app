@@ -2,7 +2,7 @@ form {
   width: min(80%, 700px);
   margin: 0 auto;
   padding-inline: 24px;
-  padding-block: 40px
+  padding-block: 40px;
 }
 .form-group {
   margin-bottom: 1rem;
@@ -40,7 +40,7 @@ form {
   background-color: #f9f9f9;
 }
 
-.blog-form input[type="text"],
+.blog-form input[type='text'],
 .blog-form textarea,
 .blog-form select {
   width: 100%;
@@ -79,20 +79,18 @@ form {
   font-size: 14px;
   margin-bottom: 10px;
 }
-.blog-form-title{
+.blog-form-title {
   margin-top: 60px;
   text-align: center;
   font-family: 2rem;
   color: var(--accentClr);
-  
 }
-  .trending {
-      float: left;
-      color: #806a78;
-      font-size: 18px;
-      margin: auto;
-      
-  }
+.trending {
+  float: left;
+  color: #806a78;
+  font-size: 18px;
+  margin: auto;
+}
 .form-check-inline {
   display: inline-flex;
   align-items: center;
@@ -110,7 +108,6 @@ form {
   margin-right: 0.5rem;
   font-size: 14px;
   color: #555;
-  
 }
 
 .form-check-label {
@@ -119,7 +116,7 @@ form {
   vertical-align: top;
   cursor: pointer;
 }
-.btn{
+.btn {
   margin-top: 20px;
   padding: 5px 15px;
   background: #6e03b5cf;
@@ -129,27 +126,21 @@ form {
 }
 
 .react-tag-input {
-    height: 45px !important;
+  height: 45px !important;
 }
 
 .react-tag-input:focus {
-    border-color:  rgba(229, 207, 247, 0.25);
+  border-color: rgba(229, 207, 247, 0.25);
 }
 
 .catg-dropdown {
-    width: 100%;
-    border-radius: 4px;
-    height: 45px;
-    color: #806a78;
-  }
-  
-  .catg-dropdown:focus {
-      outline: none !important;
-      border-color: rgba(229, 207, 247, 0.25);
-  }
+  width: 100%;
+  border-radius: 4px;
+  height: 45px;
+  color: #806a78;
+}
 
-
-
-
-
-
+.catg-dropdown:focus {
+  outline: none !important;
+  border-color: rgba(229, 207, 247, 0.25);
+}

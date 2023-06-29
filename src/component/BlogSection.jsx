@@ -56,5 +56,4 @@ const BlogSection = ({ blogs, user, handleDelete }) => {
 
 export default BlogSection
 
-// user?.uid &&
-// item.userId === userId &&
+

@@ -23,7 +23,6 @@
 .blog-heading {
   font-size: 2rem;
   font-weight: 600;
-  /* margin-bottom: 1rem; */
   color: var(--textClr);
   text-align: center;
   margin-top: 1rem;
@@ -51,7 +50,6 @@
 }
 .tags {
   display: flex;
-  /* justify-content: space-evenly; */
   flex-wrap: wrap;
 }
 
