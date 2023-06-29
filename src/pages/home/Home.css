@@ -58,7 +58,6 @@
 }
 .text-center {
   text-align: center;
-  /* margin: auto; */
 }
 .col-md-8 {
   flex: 0 0 66.666667%;
