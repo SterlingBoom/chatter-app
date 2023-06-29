@@ -12,6 +12,7 @@ export default defineConfig({
     },
   },
   build: {
+    target: 'modules',
     rollupOptions: {
       output: {
         manualChunks(id) {
