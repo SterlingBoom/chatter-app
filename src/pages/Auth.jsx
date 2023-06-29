@@ -14,7 +14,6 @@ const initialState = {
   email: '',
   password: '',
   confirmPassword: '',
-
 }
 //eslint-disable-next-line react/prop-types
 const Auth = ({ setActive, setUser }) => {
@@ -139,7 +138,7 @@ const Auth = ({ setActive, setUser }) => {
             </div>
           </>
         )}
-        <div className='form-group'>
+        <div>
           <button
             // className='btnn'
             className={'btnn ${!signUp ? "btn-sign-in" : "btn-sign-up"}'}
@@ -167,7 +166,7 @@ const Auth = ({ setActive, setUser }) => {
         ) : (
           <>
             <div>
-              <p>
+              <p className='account'>
                 Already have an account? &nbsp;
                 <span
                   className='sign-up-cursor'

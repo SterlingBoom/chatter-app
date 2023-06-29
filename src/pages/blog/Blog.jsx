@@ -26,15 +26,21 @@ const initialState = {
   description: '',
 }
 const categoryOptions = [
-  'Love',
-  'Life',
-  'Relationship',
-  'Friendship',
-  'Family',
-  'breakup',
-  'heartbreak',
-  'loneliness',
-  'inspiration',
+  'Dating Tips',
+  'Self Love and Self Care',
+  'Relationship Advice',
+  'Love and self-discovery',
+  'Marriage',
+  'Breakups and Moving On',
+  'Personal Stories',
+  'Mental Health and Relationships',
+  'Love Languages',
+  'Long Distance Relationships',
+  'LGBTQ+',
+  'Sex and Intimacy',
+  ' Healthy Boundaries',
+  'Relationship Red Flags',
+  'Parenting and Relationships',
 ]
 
 //eslint-disable-next-line react/prop-types
@@ -244,7 +250,6 @@ const Blog = ({ user, setActive }) => {
           >
             {id ? 'Update' : 'Submit'}
           </button>
-         
         </div>
       </form>
     </div>

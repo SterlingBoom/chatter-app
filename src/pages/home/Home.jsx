@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import Rain from '../../assets/DHoldHands.jpg'
+import Rain from '../../assets/love5.jpg'
 import { useEffect, useState } from 'react'
 
 import { Link } from 'react-router-dom'
@@ -14,7 +14,7 @@ import { toast } from 'react-toastify'
 import Tags from '../../component/Tags'
 import MostPopular from '../../component/MostPopular'
 import Trending from '../../component/Trending'
-// import Footer from '../../component/Footer'
+import Footer from '../../component/Footer'
 
 // eslint-disable-next-line react/prop-types
 const Home = ({ setActive, user }) => {
@@ -25,11 +25,11 @@ const Home = ({ setActive, user }) => {
 
   const getTrendingBlogs = async () => {
     const blogRef = collection(db, 'loveDeskBlogs')
-    const trendQuery = query(blogRef, where("trending", "==", "yes"))
-    const querySnapshot = await getDocs(trendQuery);
+    const trendQuery = query(blogRef, where('trending', '==', 'yes'))
+    const querySnapshot = await getDocs(trendQuery)
     let trendBlogs = []
     querySnapshot.forEach((doc) => {
-      trendBlogs.push({ id: doc.id, ...doc.data() }) 
+      trendBlogs.push({ id: doc.id, ...doc.data() })
     })
     setTrendBlogs(trendBlogs)
   }
@@ -42,9 +42,8 @@ const Home = ({ setActive, user }) => {
         let tags = []
 
         snapshot.docs.forEach((doc) => {
-            tags.push(...doc.get('tags'))
+          tags.push(...doc.get('tags'))
           list.push({ id: doc.id, ...doc.data() })
-
         })
         const uniqueTags = [...new Set(tags)]
         setTags(uniqueTags)
@@ -70,7 +69,7 @@ const Home = ({ setActive, user }) => {
       try {
         setLoading(true)
         await deleteDoc(doc(db, 'loveDeskBlogs', id))
-      
+
         toast.success('Blog deleted successfully')
         setLoading(false)
       } catch (err) {
@@ -87,7 +86,11 @@ const Home = ({ setActive, user }) => {
         </div>
         <div className='hero-text'>
           <h1>Welcome to LoveDesk! </h1>
-          <h4> Unleash the power of love and good relationships</h4>
+          <h4>
+            {' '}
+            Unleash the power of love and good relationships through the
+            transformative magic of written words
+          </h4>
           <Link to='/auth'>
             <button className='btn'>Get started</button>
           </Link>
@@ -99,7 +102,6 @@ const Home = ({ setActive, user }) => {
         </div>
         <div className='flex'>
           <div className='col-md-8'>
-            {/* <h2>blog section</h2> */}
             <BlogSection
               blogs={blogs}
               user={user}
@@ -107,14 +109,13 @@ const Home = ({ setActive, user }) => {
             />
           </div>
           <div className='col-md-3'>
-           <Tags tags={tags} />
+            <Tags tags={tags} />
             <MostPopular blogs={blogs} />
           </div>
         </div>
       </section>
-      
+      <Footer />
     </div>
-  
   )
 }
 

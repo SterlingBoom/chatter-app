@@ -1,4 +1,4 @@
-.home-bg{
+.home-bg {
   background: #e2d2d2ec !important;
 }
 .hero img {
@@ -6,15 +6,15 @@
   height: 600px;
   object-fit: cover;
 }
- .overlay {
-        position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		z-index: 10;
-		background: rgba(0,0,0,.4);
-    }
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.4);
+}
 .hero {
   position: relative;
   width: 100%;
@@ -25,13 +25,23 @@
 .hero-text {
   position: absolute;
   top: 50%;
-  /* bottom: 30%; */
   left: 63%;
   transform: translate(-50%, -50%);
-  color: rgba(229, 204, 243, 0.976);
+  color: var(--accentClr);
+  animation: slideInFromLeft 1s ease-in-out;
   text-align: right;
   font-size: 1.1rem;
   font-weight: 900;
+}
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 .hero button {
   color: var(--white);
@@ -46,7 +56,7 @@
   color: var(--white);
   border-radius: 5px;
 }
-.text-center{
+.text-center {
   text-align: center;
   /* margin: auto; */
 }
@@ -55,30 +65,33 @@
   max-width: 66.666667%;
 }
 
-.col-md-3{
+.col-md-3 {
   flex: 0 0 25%;
   max-width: 25%;
 }
-.flex{
+.flex {
   display: flex;
   justify-content: space-between;
- 
-  
 }
 
-@media (max-width: 49.9375rem){
-  .flex{
+@media (max-width: 49.9375rem) {
+  .flex {
     flex-direction: column;
   }
-  .col-md-8{
+  .col-md-8 {
     flex: 0 0 100%;
     max-width: 100%;
   }
-  .col-md-3{
+  .col-md-3 {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+  .hero button {
+    margin-bottom: 50px;
+  }
+
+  .hero-text {
+    left: 50%;
+    text-align: center;
   }
 }
-
-
-

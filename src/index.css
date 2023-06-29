@@ -116,15 +116,16 @@ a:focus {
   /* width:90%;  */
 }
 
+/* AUTH */
+
 .sign-in {
-  height: 80dvh;
+  height: 80vdh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   align-items: center;
-  margin-top: 80px;
-
+  margin-top: 60px;
 }
 .btnn {
   padding: 5px 15px;
@@ -155,6 +156,9 @@ a:focus {
 .btnn:disabled:hover {
   background: var(--grey);
   color: var(--white);
+}
+.account {
+  margin-top: 10px;
 }
 .btn:disabled:active {
   background: var(--grey);
@@ -238,12 +242,13 @@ a:focus {
   color: var(--white);
 }
 .btn-sign-up {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   padding: 5px 15px;
   background: #6e03b5cf;
   border: none;
   color: var(--white);
   border-radius: 5px;
+  margin-bottom: 0;
 }
 form {
   width: min(80%, 700px);
@@ -251,6 +256,7 @@ form {
   box-shadow: 2px 0px 5px -1px var(--accentClr);
   padding-inline: 24px;
   padding-block: 40px;
+
   /* margin-top: 0; */
 }
 .form-group {
@@ -258,7 +264,7 @@ form {
 }
 label {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .flex {
   display: flex;
@@ -326,7 +332,7 @@ input[type='submit']:disabled:hover {
   margin-top: 20px;
 }
 .sign-up-title {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   margin-top: 20px;
 }
 .sign-in-title,
@@ -341,7 +347,6 @@ h1 {
   font-weight: 700;
   text-align: center;
 }
-
 
 /* //BLOG */
 blog-section {
@@ -500,6 +505,7 @@ blog-section {
   justify-content: space-between;
   align-items: center;
   margin-top: 15px;
+  margin-left: 80px;
 }
 .py-2 {
   padding-top: 1rem;
@@ -607,12 +613,6 @@ blog-section {
   flex: 0 0 33.333333%;
   max-width: 33.333333%;
 }
-
-/* .col-md-3 {
-  flex-basis: 33.33333%;
-  max-width: 33.33333%;
-  padding: 0 10px;
-} */
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -629,45 +629,45 @@ blog-section {
   padding: 0 10px;
 } */
 
-.error-404{
+.error-404 {
   margin-top: 100px;
   text-align: center;
-
 }
-.error-404 h1{
+.error-404 h1 {
   font-size: 100px;
   font-weight: 700;
-  color:
-   #ec0606;
+  color: #ec0606;
 }
 
-.error-404 h2{
+.error-404 h2 {
   font-size: 50px;
   font-weight: 700;
-  color:
-   #ec0606;
+  color: #ec0606;
 }
 
-.error-404 p{
+.error-404 p {
   font-size: 20px;
   font-weight: 700;
-  color:
-   #ec0606;
+  color: #ec0606;
 }
 
-@media (max-width: 49.9375rem){
-  .row{
+@media (max-width: 49.9375rem) {
+  .row {
     flex-direction: column;
+  }
+  .col-md-8 {
+    flex-basis: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  .col-md-4 {
+    flex-basis: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+  }
 
-  }
-  .col-md-8{
-    flex-basis: 100%;
-    max-width: 100%;
-    padding: 0 10px;
-  }
-  .col-md-4{
-    flex-basis: 100%;
-    max-width: 100%;
-    padding: 0 10px;
+  .sign-in button {
+    margin-top: 10px;
+    margin-left: 90px;
   }
 }

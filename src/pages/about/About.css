@@ -11,9 +11,10 @@
 }
 .about-img {
   width: 400px;
-  height: 500px;
+  height: auto;
   /* text-align: center; */
   margin: 0 50px;
+  margin-bottom: 20px;
 }
 .about-text {
   color: var(--greyGold);
