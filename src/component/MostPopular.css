@@ -1,15 +1,14 @@
-
 /* MostPopular */
-.blog-heading{
-    font-size: 2rem;
-    font-weight: 600;
-    color: var(--textClr);
-    text-align: center;
-    margin-top: 1rem;
+.blog-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--textClr);
+  text-align: center;
+  margin-top: 1rem;
 }
 
 .text-start {
-    text-align: start;
+  text-align: start;
 }
 .pt-3 {
   padding-top: 0.75rem;
@@ -19,83 +18,60 @@
   padding-bottom: 0.5rem;
 }
 
-.row{
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
-.pb-3{
-    padding-bottom: 0.75rem;
+.pb-3 {
+  padding-bottom: 0.75rem;
 }
 
-.col-md-4{
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
-    padding-right: 15px;
-    padding-left: 15px;
+.col-md-4 {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  padding-right: 15px;
+  padding-left: 15px;
 }
-.padding{
-    padding: 1rem;
+.padding {
+  padding: 1rem;
 }
 .align-self-center {
-    align-self: center!important;
+  align-self: center !important;
 }
-/* .col-8{
-    flex: 0 0 66.666667%;
-    max-width: 66.666667%;
-    padding-right: 15px;
-    padding-left: 15px;
-} */
 
-.col-7{
-    flex: 0 0 58.333333%;
-    max-width: 58.333333%;
+.col-7 {
+  flex: 0 0 58.333333%;
+  max-width: 58.333333%;
 }
-.text-center{
-    text-align: center!important;
+.text-center {
+  text-align: center !important;
 }
 
 .most-popular-font {
-   font-weight: 500; 
+  font-weight: 500;
 }
 
 .most-popular-font-meta {
-    font-size: 12px;
-	color: #777;
+  font-size: 12px;
+  color: #777;
 }
-.most-popular-img{
-    height: 80px;
-    width: 100%;
+.most-popular-img {
+  height: 80px;
+  width: 100%;
 }
-@media (max-width: 49.9375rem){
-    .col-md-4{
-        flex: 0 0 100%;
-        max-width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-    .col-7{
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-    /* .text-center{
-        text-align: center!important;
-    }
-    .most-popular-img{
-        height: 100px;
-        width: 100%;
-    }
-    .most-popular-font-meta {
-        font-size: 10px;
-        color: #777;
-    }
-    .most-popular-font {
-        font-weight: 500; 
-        font-size: 1rem;
-    }
-    .blog-heading{
-        font-size: 1.5rem;
-    } */
+@media (max-width: 49.9375rem) {
+  .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .col-7 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
+  

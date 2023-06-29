@@ -3,12 +3,11 @@
   justify-content: space-between;
   align-items: center;
   padding-block: 8px;
-  
 }
-.btn{
+.btn {
   cursor: pointer;
 }
-.header{
+.header {
   background-color: var(--white);
   position: fixed;
   top: 0;
@@ -21,23 +20,13 @@
   height: 4rem;
   rotate: 12deg;
 }
- .header h1 {
+.header h1 {
   color: var(--textClr);
   font-size: 2rem;
-  
 }
-.header h1:hover  {
-  /* color: var(--accentClr); */
+.header h1:hover {
   outline: none;
-  /* background: none; */
 }
-
-/* .header h1{
- position: relative;
-  top: 18px;
-  left: 10px;
-}  */
-
 .nav-menu-ul {
   background-color: var(--accentClr);
   display: flex;
@@ -67,13 +56,6 @@
 .nav-menu-ul a:hover {
   color: var(--textClr);
 }
-/* button {
-  padding: 4px 29px;
-  background: none;
-  color: #fff;
-  border: 1px solid #fff;
-  cursor: pointer;
-} */
 
 .nav-ul {
   display: none;
@@ -87,7 +69,6 @@
   border: none;
   cursor: pointer;
 }
-
 .menu-btn > span {
   display: block;
   height: 2px;
@@ -132,14 +113,13 @@ span:last-child {
   .avatar-mobile {
     display: none;
   }
-  .nav-menu-ul {
+  zx .nav-menu-ul {
     display: none;
   }
 }
-.welcome{
+.welcome {
   color: var(--accentClr);
   font-size: 1.2rem;
   margin-left: 1rem;
   font-weight: 600;
-
 }
