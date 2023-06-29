@@ -75,12 +75,15 @@ a {
   transition: color 400ms ease-in;
   text-decoration: none;
 }
+
 a:hover {
   color: var(--accentClr);
 }
+
 a:active {
   color: var(--accentClr);
 }
+
 a:active,
 h1:active {
   background: none;
@@ -109,6 +112,7 @@ a:focus {
   align-items: center;
   margin-top: 60px;
 }
+
 .btnn {
   padding: 5px 15px;
   background: #6e03b5cf;
@@ -118,86 +122,107 @@ a:focus {
   margin-left: 250px;
   cursor: pointer;
 }
+
 .btnn:hover {
   background: var(--accentClr);
   color: var(--white);
 }
+
 .btnn:active {
   background: var(--accentClr);
   color: var(--white);
 }
+
 .btnn:focus {
   background: var(--accentClr);
   color: var(--white);
   outline: none;
 }
+
 .btn:disabled {
   background: var(--grey);
   color: var(--white);
 }
+
 .btnn:disabled:hover {
   background: var(--grey);
   color: var(--white);
 }
+
 .account {
   margin-top: 10px;
 }
+
 .btn:disabled:active {
   background: var(--grey);
   color: var(--white);
 }
+
 .btnn:disabled:focus {
   background: var(--grey);
   color: var(--white);
 }
+
 .btnn:disabled {
   background: var(--grey);
   color: var(--white);
 }
+
 .btnn:disabled:hover {
   background: var(--grey);
   color: var(--white);
 }
+
 .btnn:disabled:active {
   background: var(--grey);
   color: var(--white);
 }
+
 .btnn:disabled:focus {
   background: var(--grey);
   color: var(--white);
 }
+
 .btn:disabled {
   background: var(--grey);
   color: var(--white);
 }
+
 .btnn:disabled:hover {
   background: var(--grey);
   color: var(--white);
 }
+
 .btn:disabled:active {
   background: var(--grey);
   color: var(--white);
 }
+
 .btnn:disabled:focus {
   background: var(--grey);
   color: var(--white);
 }
+
 .btnn:disabled {
   background: var(--grey);
   color: var(--white);
 }
+
 .btnn:disabled:hover {
   background: var(--grey);
   color: var(--white);
 }
+
 .btn:disabled:active {
-  background: var(--grey);
-  color: var(--white);
+background: var(--grey);
+color: var(--white);
 }
+
 .btnn:disabled:focus {
   background: var(--grey);
   color: var(--white);
 }
+
 .btn-sign-in {
   margin-top: 20px;
   padding: 5px 15px;
@@ -206,10 +231,12 @@ a:focus {
   color: var(--white);
   border-radius: 5px;
 }
+
 .btn-sign-in:hover {
   background: var(--accentClr);
   color: var(--white);
 }
+
 form {
   width: min(80%, 700px);
   margin: 0 auto;
@@ -217,19 +244,23 @@ form {
   padding-inline: 24px;
   padding-block: 40px;
 }
+
 .btn-sign-in:active {
   background: var(--accentClr);
   color: var(--white);
 }
+
 .btn-sign-in:focus {
   background: var(--accentClr);
   color: var(--white);
   outline: none;
 }
+
 .btn-sign-in:disabled {
   background: var(--grey);
   color: var(--white);
 }
+
 .btn-sign-up {
   padding: 5px 15px;
   background: #6e03b5cf;
@@ -238,87 +269,107 @@ form {
   border-radius: 5px;
   margin-bottom: 0;
 }
+
 .form-group {
   margin-bottom: 5px;
 }
+
 label {
   display: block;
   margin-bottom: 5px;
 }
+
 .flex {
   display: flex;
   justify-content: space-between;
 }
+
 input {
   width: 100%;
   border: 1px solid var(--accentClr);
   padding: 7px 15px;
   border-radius: 5px;
 }
+
 input:focus {
   outline: none;
   border-color: var(--accentClr);
 }
+
 input[type='submit'] {
   background: var(--accentClr);
   color: var(--white);
   border: none;
   cursor: pointer;
 }
+
 input[type='submit']:hover {
   background: var(--accentClr);
   color: var(--white);
 }
+
 input[type='submit']:active {
   background: var(--accentClr);
   color: var(--white);
 }
+
 input[type='submit']:focus {
   background: var(--accentClr);
   color: var(--white);
 }
+
 input[type='submit']:disabled {
   background: var(--grey);
   color: var(--white);
   cursor: not-allowed;
 }
+
 input[type='submit']:disabled:hover {
   background: var(--grey);
   color: var(--white);
 }
+
 input[type='submit']:disabled:active {
   background: var(--grey);
   color: var(--white);
 }
+
 input[type='submit']:disabled:focus {
   background: var(--grey);
   color: var(--white);
 }
+
 input[type='submit']:disabled {
   background: var(--grey);
   color: var(--white);
 }
+
 input[type='submit']:disabled:hover {
   background: var(--grey);
   color: var(--white);
 }
+
 .sign-up-cursor {
   cursor: pointer;
 }
+
 .sign-in-title {
   margin-bottom: 20px;
   margin-top: 20px;
 }
+
 .sign-up-title {
   margin-bottom: 5px;
   margin-top: 20px;
 }
+
 .sign-in-title,
 h1 {
   font-size: 2rem;
   font-weight: 700;
   text-align: center;
 }
+
 .sign-up-title,
 h1 {
   font-size: 2rem;
@@ -365,7 +416,7 @@ h1 {
   transition: (all 0.5s);
 }
 
-.hover-blogs-img:hover > .blogs-img {
+.hover-blogs-img:hover>.blogs-img {
   top: -7px;
   box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.2);
 }
@@ -379,6 +430,7 @@ h1 {
 .text-start {
   text-align: left;
 }
+
 .category {
   display: inline-block;
   position: relative;
@@ -392,6 +444,7 @@ h1 {
   font-weight: 700;
   border-radius: 4px;
 }
+
 .title {
   font-size: 17px;
   color: #222 !important;
@@ -405,6 +458,7 @@ h1 {
   font-size: 12px;
   color: #222;
 }
+
 .author {
   display: inline-block;
   font-weight: 600;
@@ -439,6 +493,7 @@ h1 {
   margin-top: 15px;
   margin-left: 80px;
 }
+
 .py-2 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -450,6 +505,7 @@ h1 {
   cursor: pointer;
   font-size: 20px;
 }
+
 .icon-trash {
   color: #c43421 !important;
 }
@@ -483,6 +539,7 @@ h1 {
   z-index: 10;
   background: rgba(0, 0, 0, 0.4);
 }
+
 .blog-single-content .meta-info {
   margin-top: 8px;
   border-bottom: 1px solid #777;
@@ -511,7 +568,7 @@ h1 {
   font-size: 72px;
 }
 
-.blog-title-box .blog-title > span {
+.blog-title-box .blog-title>span {
   color: rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
   font-size: 15px;
@@ -528,33 +585,41 @@ h1 {
 .blog-single-content ul li {
   font-size: 1.05rem;
 }
+
 .row {
   display: flex;
   justify-content: space-between;
   margin-right: -15px;
   margin-left: -15px;
 }
+
 .col-md-8 {
   flex: 0 0 66.666667%;
   max-width: 66.666667%;
 }
+
 .col-md-4 {
   flex: 0 0 33.333333%;
   max-width: 33.333333%;
 }
+
 .pb-4 {
   padding-bottom: 1rem;
 }
+
 .pt-4 {
   padding-top: 1rem;
 }
+
 .detail-top {
   margin-top: 70px;
 }
+
 .error-404 {
   margin-top: 100px;
   text-align: center;
 }
+
 .error-404 h1 {
   font-size: 100px;
   font-weight: 700;
@@ -577,11 +642,13 @@ h1 {
   .row {
     flex-direction: column;
   }
+
   .col-md-8 {
     flex-basis: 100%;
     max-width: 100%;
     padding: 0 10px;
   }
+
   .col-md-4 {
     flex-basis: 100%;
     max-width: 100%;
