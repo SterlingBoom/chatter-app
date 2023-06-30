@@ -1,5 +1,5 @@
 import './About.css'
-import couple from '../../assets/flowers.jpg'
+import couple from '../../assets/DHoldHands.jpg'
 const About = () => {
   return (
     <>
