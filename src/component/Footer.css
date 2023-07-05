@@ -114,3 +114,12 @@
   display: inline-block;
   margin-right: 10px;
 }
+
+@media (max-width: 49.9375rem) {
+  .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}

@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
-import "./Footer.css"
+import './Footer.css'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -20,13 +21,13 @@ const Footer = () => {
               <h3>Quick Links</h3>
               <ul className='list-unstyled'>
                 <li>
-                  <a href='/'>Home </a>
+                  <Link to='/'>Home </Link>
                 </li>
                 <li>
-                  <a href='/about'>About</a>
+                  <Link to='/about'>About</Link>
                 </li>
                 <li>
-                  <a href='/create'>Create</a>
+                  <Link to='/create'>Create</Link>
                 </li>
               </ul>
             </div>
